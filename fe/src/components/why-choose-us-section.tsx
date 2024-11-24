@@ -35,10 +35,7 @@ export default function WhyChooseUs({ content }: WhyChooseUsProps) {
           </div>
           <div className="absolute left-80 top-0 w-96 h-96 bg-gray-100 rounded-full overflow-hidden">
             <img
-              src={
-                process.env.STRAPI_API_URL +
-                content?.Feature?.[activeFeature].img.url
-              }
+              src={content?.Feature?.[activeFeature].img.url}
               alt="A person holding a red phone"
               width={1000}
               height={1000}
