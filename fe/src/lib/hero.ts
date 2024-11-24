@@ -7,6 +7,9 @@ export async function getWhyChooseUsContent(): Promise<WhyChooseUsContent> {
     `${STRAPI_API_URL}/api/about?populate[Feature][populate]=img`,
     {
       next: { revalidate: 0 },
+      headers: {
+        Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
+      },
     }
   );
 
