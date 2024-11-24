@@ -1,12 +1,12 @@
 export interface WhyChooseUsContent {
-  subtitle: string;
-  title: string;
-  desc: string;
+  subtitle: string | null;
+  title: string | null;
+  desc: string | null;
   Feature: {
-    Title: string;
-    desc: string;
+    Title: string | null;
+    desc: string | null;
     img: {
-      url: string;
+      url: string | null;
     };
   }[];
 }
